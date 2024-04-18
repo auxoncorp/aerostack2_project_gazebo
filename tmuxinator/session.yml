@@ -68,4 +68,5 @@ windows:
             use_sim_time:=true
             tree:=./trees/square.xml
         <%- end %>
-        - echo Run here the mission
+        - sleep 10;  python3 mission_swarm_noprompt.py; ./stop.bash
+        - sleep 120; ./stop.bash
